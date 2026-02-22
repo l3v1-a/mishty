@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Screen -->
+    <div id="landing">
+        <h1>I have a little surprise for someone very special...</h1>
+        <div class="password-container">
+            <input type="password" id="passwordInput" placeholder="Enter the secret password...">
+            <button id="revealBtn">Click to Reveal ✨</button>
+            <p id="errorMessage" class="hidden error-text">Oops! That's not the right password. Try again! 🥺</p>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-content" class="hidden">
+        <!-- Hidden Audio Player -->
+        <audio id="bgMusic" loop>
+            <source src="song/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="header">
+            <h1 class="title">To the most beautiful and caring soul ❤️</h1>
+            <p class="subtitle">Just a little something to make you smile!</p>
+        </div>
+
+        <div class="shayari-container">
+            <div class="shayari-card">
+                <p>"Chandni raaton mein teri muskurahat ka noor hai,<br>Tu itni khoobsurat hai ki chand bhi tujhse door hai." ✨</p>
+            </div>
+            <div class="shayari-card">
+                <p>"Teri fikar mein jo sukoon hai, wo duniya ki kisi daulat mein kahan.<br>Tu dost nahi, meri zindagi ka sabse haseen hissa hai." 🌸</p>
+            </div>
+            <div class="shayari-card">
+                <p>"Khuda ne fursat mein banaya hoga tujhe,<br>Teri saadgi mein bhi ek alag hi kashish hai." 💖</p>
+            </div>
+        </div>
+
+        <div class="gallery-title">
+            <h2>A Glimpse of Your Perfection</h2>
+        </div>
+
+        <div class="gallery">
+            <!-- Images will be injected via JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
